@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/black"
+    android:fitsSystemWindows="true">
+
+    <!-- Wrap the subtitleTextView in a ScrollView -->
+    <ScrollView
+        android:id="@+id/scrollViewSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/middleTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/subtitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textSize="32sp"
+            android:textColor="@color/white"
+            android:textIsSelectable="true" />
+    </ScrollView>
+
+    <!-- Other views remain unchanged -->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/middleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/buttonsLayout"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="8dp" />
+
+    <!-- ButtonsLayout and its children -->
+    <LinearLayout
+        android:id="@+id/buttonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="30dp">
+
+        <!-- Left Column -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+            <!-- Empty Space -->
+        </LinearLayout>
+
+        <!-- Center Column -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/BackwardButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Backward"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/dark_grey"
+                android:layout_marginEnd="16dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/pauseButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pause"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/dark_grey"
+                android:layout_marginEnd="16dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/ForwardButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forward"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/dark_grey"
+                android:layout_marginEnd="16dp" />
+        </LinearLayout>
+
+        <!-- Right Column -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/menuButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/icon_2"
+                android:scaleType="fitXY"
+                app:backgroundTint="@color/dark_grey"
+                android:layout_marginEnd="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

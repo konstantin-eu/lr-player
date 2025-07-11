@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/open_file"
+        android:title="Open Audio File" />
+
+    <item
+        android:id="@+id/select_from_list"
+        android:title="Select from Recent" />
+
+    <item
+        android:id="@+id/clear_cache"
+        android:title="Clear Cache" />
+
+</menu>
