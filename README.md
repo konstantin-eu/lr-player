@@ -13,8 +13,10 @@ Channels: Stereo
 Sample rate: 22050 Hz
 Bits per sample: 32
 
-# app screenshots and video
-TODO
+# app screenshots
+[player](screenshots/lr-player_screenshot_01.png)
+[generated audio and subtitle file picker](screenshots/lr-player_screenshot_02.png)
+[library media selector](screenshots/lr-player_screenshot_03.png)
 
 # Note on Code Generation
 Parts of this project were programmed with the assistance of a large language model (LLM).
