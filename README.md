@@ -20,3 +20,7 @@ TODO
 Parts of this project were programmed with the assistance of a large language model (LLM).
 As such, some code may not reflect standard best practices or optimal design choices.
 Contributions and improvements are welcome!
+
+# Contact
+Feel free to reach out!
+Email: [langrepeater@gmail.com](mailto:langrepeater@gmail.com)
